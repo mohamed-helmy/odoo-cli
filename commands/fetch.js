@@ -1,15 +1,14 @@
 
-const conf = new (require('conf'))()
 const chalk = require('chalk')
 const yaml = require('js-yaml');
-const request = require('superagent');
+const request = require('request');
 const fs = require('fs');
 const shell = require('shelljs');
 const AdmZip = require('adm-zip');
 const { exit } = require('process');
 const cliProgress = require('cli-progress');
 const colors = require('ansi-colors');
-const tmpPath= '/odoo-cli-temp'
+const tmpPath= './odoo-cli-temp'
 
 function createTmp() {
   if (fs.existsSync(tmpPath)) {
@@ -135,7 +134,6 @@ function fetchGithub(dependency,addonsPath){
 
 
 process.on('exit', function (){
-  console.log(chalk.green.bold("Congratulation .. addons fetched successfully !"));
   removeTmp()
 });
 module.exports = fetch

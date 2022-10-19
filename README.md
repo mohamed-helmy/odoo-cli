@@ -1,6 +1,6 @@
 # odoo-cli
 
-odoo-cli used to fetch and addons from github and gitlab and enable developer to upgrade and install modules
+odoo-cli used to fetch  addons from github and gitlab and enable developer to upgrade and install modules
 ## YMl File Sample Configuration 
 ```
 odoo: 

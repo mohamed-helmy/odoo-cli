@@ -1,6 +1,6 @@
 {
-  "name": "odoo-cli",
-  "version": "1.0.0",
+  "name": "odoo-addons-cli",
+  "version": "1.0.7",
   "description": "odoo-cli used to fetch and addons from github and gitlab and enable developer to upgrade and install modules",
   "main": "index.js",
   "scripts": {
@@ -28,10 +28,9 @@
     "chalk": "^4.1.0",
     "cli-progress": "^3.11.2",
     "commander": "^9.4.1",
-    "conf": "^10.2.0",
     "js-yaml": "^4.1.0",
-    "shelljs": "^0.8.5",
-    "superagent": "^8.0.2"
+    "request": "^2.88.2",
+    "shelljs": "^0.8.5"
   },
   "bin": {
     "odoo-cli": "index.js"
