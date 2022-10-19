@@ -9,7 +9,7 @@ const AdmZip = require('adm-zip');
 const { exit } = require('process');
 const cliProgress = require('cli-progress');
 const colors = require('ansi-colors');
-const tmpPath= '/home/ejaf/odoo-cli-temp'
+const tmpPath= '/odoo-cli-temp'
 
 function createTmp() {
   if (fs.existsSync(tmpPath)) {
