@@ -1,0 +1,39 @@
+{
+  "name": "odoo-cli",
+  "version": "1.0.0",
+  "description": "odoo-cli used to fetch and addons from github and gitlab and enable developer to upgrade and install modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "test",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohamed-helmy/odoo-cli.git"
+  },
+  "keywords": [
+    "odoo",
+    "odoo-cli",
+    "addons"
+  ],
+  "author": "Mohamed Helmy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mohamed-helmy/odoo-cli/issues"
+  },
+  "homepage": "https://github.com/mohamed-helmy/odoo-cli#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.9",
+    "ansi-colors": "^4.1.3",
+    "chalk": "^4.1.0",
+    "cli-progress": "^3.11.2",
+    "commander": "^9.4.1",
+    "conf": "^10.2.0",
+    "js-yaml": "^4.1.0",
+    "shelljs": "^0.8.5",
+    "superagent": "^8.0.2"
+  },
+  "bin": {
+    "odoo-cli": "index.js"
+  }
+}
